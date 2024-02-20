@@ -1,0 +1,28 @@
+{
+    "manifest_version": 3,
+    "name": "힙X 게시글 필터링 확장 프로그램",
+    "version":"1.0",
+    "description": "힙합엘이 사이트에서만 사용되며, 힙X 게시글을 숨깁니다.",
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": ["https://hiphople.com/*"],
+            "js": ["content.js"]
+        }
+    ],
+    "action": {
+        "default-popup": "popup.html",
+        "default_icon": {
+            "16": "icon16.png",
+            "48": "icon46.png",
+            "128": "icon128.png"
+        }
+    },
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon46.png",
+        "128": "icon128.png"    
+    }
+}
